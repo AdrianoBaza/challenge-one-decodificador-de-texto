@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Autor" content="Adriano Ferreira">
+        <meta name="Assunto" content="Decodificador de Texto">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Text+Me+One&display=swap" rel="stylesheet">
+        <link rel="icon" href="/imagens/logo_alura.png">
+        <title>Decodificador de Texto</title>
+    </head>
+
+    <body>
+         <!--envolve todas as seções da página-->
+        <div class="container">
+
+            <!-- contém a logomarca linkada para a página home da alura -->
+            <header>
+                <a href="https://www.alura.com.br" target="_blank"><img class="img-logo-alura" src="imagens/logo_alura.png" alt="logomarca da alura"></a>
+                <h1>Decodificador de Texto</h1>
+            </header>
+
+            <!-- recebe as entradas de texto do usuário e contém os botões de ação para criptografar, descriptogrfar, colar, recomeçar-->
+            <main>
+                <div class="molduraMain">
+                    <textarea  id="mensagemEntrada"  rows="6"></textarea>
+                
+                    <div class="mensagemEntradaDinamicaBox">
+                        <img class="exclamacao" src="imagens/exclamacao.png" alt="Símbolo de exclamação">
+                        <h6 id="mensagemEntradaDinamica"><strong>Apenas letras minúsculas e sem acento.</strong></h6>
+                    </div>
+
+                    <div class="botaoColarBox">
+                        <button id="botaoColar">colar</button>
+                    </div>
+
+                    <div class="botaoRecomecarBox">
+                        <button id="botaoRecomecar">recomeçar</button>
+                    </div>
+
+                    <div class="botoes">
+                        <button id="botaoCriptografar">criptografar</button>
+                        <button id="botaoDescriptografar">descriptografar</button>
+                    </div>
+                </div>                    
+            </main>
+
+
+            <!-- Exibe o resultado do texto criptografado/descriptografado e contém o botão de ação para copiar o texto criptografado/descriptografado -->
+            <aside>
+                <div class="molduraAside">
+                    <textarea  id="mensagemSaida" rows="6"></textarea>
+
+                    <img id="mascoteImagem" src="imagens/mascote.png" alt="">
+
+                    <h6 id="mensagemSaidaDinamica"><strong>Nenhuma mensagem encontrada</strong></h6>
+
+                    <button id="botaoCopiar">copiar</button>
+                </div>
+            </aside>
+
+            <!-- Seção rodapé contendo copyright e link para páginas do autor -->
+            <footer>
+                <div class="copyrightBox">
+                    <p>&copy; Desenvolvido por Adriano Ferreira</p>
+                </div>
+
+                <div class="contatosBox">
+                    <a class="iconesContatos" href="https://github.com/AdrianoBaza" target="_blank"><img src="imagens/icone-github.png" alt="Ícone github"></a>
+                    
+                    <a class="iconesContatos" href="https://www.linkedin.com/in/adrianofsvasconcelos/" target="_blank"><img src="imagens/icone-linkedin.png" alt="Ícone linkedin"></a>
+                </div> 
+            </footer>
+
+        </div>
+        
+    </body>
+
+</html>
