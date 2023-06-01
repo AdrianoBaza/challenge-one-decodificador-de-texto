@@ -132,6 +132,15 @@ aside {
     border-radius: 20px;
 }
 
+#mascoteImagem {
+    width: 70%;
+}
+
+#mensagemSaidaDinamica {
+    width: 100%;
+    color: #FFFFFF;
+}
+
 
 
 /* Seção Rodapé */
