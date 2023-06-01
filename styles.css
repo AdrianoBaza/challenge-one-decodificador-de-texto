@@ -86,6 +86,17 @@ main {
     align-items:center;
 }
 
+.exclamacao {
+    width: 14px;
+    margin-right: 3px;
+}
+
+#mensagemEntradaDinamica {
+    width: 100%;
+    font-weight: 600;
+    color: #01180c;
+}
+
 
 
 /* Seção Barra lateral (aside) */
