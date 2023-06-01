@@ -152,3 +152,35 @@ footer {
     background-color: #01180c;
     padding: 10px;
 }
+
+.copyrightBox {
+    width: 100%;
+}
+
+.copyrightBox p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #3a5747;
+}
+
+.copyrightBox:hover p {
+    transition: 400ms all;
+    opacity: 0.5;
+    color: #daf95c;
+}
+
+.contatosBox {
+    width: 100%;
+    margin-top: 8px;
+}
+
+.iconesContatos img {
+    width: 30px;
+    opacity: 0.27;
+}
+
+.iconesContatos:hover img {
+    width: 30px;
+    opacity: 0.4;
+    box-shadow: 0px 0px 3px 2px #daf95c;
+}
