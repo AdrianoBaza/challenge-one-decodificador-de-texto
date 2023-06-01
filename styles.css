@@ -48,7 +48,7 @@ header h1 {
 
 
 
-/* Seção Conteúdo (main) */
+/* Seção Conteúdo (main) - Contem moldura, campos para entrada de texto, mensagem dinâmica, botões para criptografar, descriptografar, colar texto e recomeçar a aplicação */
 
 main {
     grid-area: main;
@@ -99,7 +99,7 @@ main {
 
 
 
-/* Seção Barra lateral (aside) */
+/* Seção Barra lateral (aside) - Contém moldura, campos para saída de texto, mensagem dinâmica, botão copiar texto*/
 
 aside {
     grid-area: sidebar;
@@ -143,7 +143,7 @@ aside {
 
 
 
-/* Seção Rodapé */
+/* Seção Rodapé (footer) - Contém copyright e links para redes do autor da aplicação*/
 
 footer {
     grid-area: footer;
