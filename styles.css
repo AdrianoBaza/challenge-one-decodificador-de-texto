@@ -72,6 +72,20 @@ main {
     border-radius: 30px;
 }
 
+#mensagemEntrada {
+    width: 94%;
+    color: #01180c;
+    font-size: 16px;
+    padding: 10px;
+    border: 2px solid rgba(16, 29, 22, 0.3);
+    border-radius: 20px;
+}
+
+.mensagemEntradaDinamicaBox {
+    display: flex;
+    align-items:center;
+}
+
 
 
 /* Seção Barra lateral (aside) */
