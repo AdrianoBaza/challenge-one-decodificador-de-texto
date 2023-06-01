@@ -184,3 +184,94 @@ footer {
     opacity: 0.4;
     box-shadow: 0px 0px 3px 2px #daf95c;
 }
+
+
+
+/* Formatação dos botoes criptografar, descriptografar, copiar, colar, recomeçar*/
+
+/* caixa que envolve os botoes da seção main */
+.botaoColarBox, .botaoRecomecarBox, .botoesEncriptografarBox {
+    text-align: center;
+    width: 100%;
+}
+
+/* estilização dos 5 botões da aplicação */
+#botaoColar, #botaoRecomecar, #botaoCriptografar, #botaoDescriptografar, #botaoCopiar {
+    width: 45%;
+    min-width: 110px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+}
+
+/* formatação da fonte com negrito */
+#botaoColar, #botaoRecomecar, #botaoCriptografar {
+    font-weight: 600;
+}
+
+/* estilização da cor e hover do botao colar*/
+#botaoColar {
+    background-color: #f05e4d;
+    color: #01180c;       
+}
+
+#botaoColar:hover {    
+    transition: 200ms all;
+    cursor: pointer;
+    background-color: #ea2a15;
+    color: #01180c; 
+}
+
+/* estilização da cor e hover do botao recomecar*/
+#botaoRecomecar {
+    background-color: #c8cd3b;
+    color: #01180c;
+}
+
+#botaoRecomecar:hover {    
+    transition: 200ms all;
+    cursor: pointer;
+    background-color: #95a131;
+    color: #daf95c; 
+}
+
+/* estilização de margem, cor e hover do botao criptografar*/
+#botaoCriptografar {
+    background-color: #f3db41;
+    color: #01180c;   
+    margin-bottom: 5px;
+}
+
+#botaoCriptografar:hover {    
+    transition: 200ms all;
+    cursor: pointer;
+    background-color: #ffab07;
+    color: #01180c;      
+}
+
+/* estilização da cor e hover do botao descriptografar*/
+#botaoDescriptografar {
+    background-color: #3a5747;
+    color: #daf95c;    
+}
+
+#botaoDescriptografar:hover {    
+    transition: 200ms all;
+    cursor: pointer;
+    background-color: #01180c;
+    color: #daf95c;    
+}
+
+/* estilização da borda, cor e hover do botao copiar*/
+#botaoCopiar {
+    background-color: #01180c;
+    color: #FFFFFF;;
+    border: 1px solid #FFFFFF;
+}
+
+#botaoCopiar:hover {    
+    transition: 200ms all;
+    cursor: pointer;
+    background-color: #3a5747;
+    color: #daf95c;
+}
