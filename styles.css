@@ -58,6 +58,20 @@ main {
     padding: 10px;
 }
 
+.molduraMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    border: 3px solid #101d16;
+    box-shadow: 0px 0px 3px 2px #daf95c;
+    border-radius: 30px;
+}
+
 
 
 /* Seção Barra lateral (aside) */
