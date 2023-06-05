@@ -150,6 +150,43 @@ function inicio() {
 
 
 
+//executa a criptografia do texto inserido pelo usuário
+function criptografar(stringCriptografada) {
+
+    var chaves = [['e', 'enter'], ['i', 'imes'], ['a', 'ai'], ['o', 'ober'], ['u', 'ufat']];
+    stringCriptografada = stringCriptografada.toLowerCase();
+    
+    for(var i = 0; i < chaves.length; i++) {
+        if(stringCriptografada.includes(chaves[i][0])) {
+            stringCriptografada = stringCriptografada.replaceAll(chaves[i][0], chaves[i][1]);
+        }
+    }
+
+    return stringCriptografada;
+
+}
+
+
+
+//chama a função criptografar; envia popup; oculta a imagem mascote, envia mensagem e exibe o botão copiar (na seção aside)
+function botaoCriptografar () {
+
+    ocultarMascote();
+
+    var textoCriptografado = criptografar(mensagemEntrada.value);
+    mensagemSaida.value = textoCriptografado;
+    if(mensagemSaida.value = textoCriptografado) {
+        mensagemEntrada.value = "";
+        mensagemEntrada.focus();
+        alert('CRIPTOGRAFADO COM SUCESSO!'); //exibe popup de confirmação da criptografia
+        exibirAlertaSaida('clique no botão copiar');
+        exibirBotaoCopiar();
+    }
+    
+}
+
+
+
 //chama essas funções para iniciar a aplicação com os botões ocultos.
 ocultarBotaoCopiar();
 ocultarBotaoColar();
