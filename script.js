@@ -105,6 +105,28 @@ function exibirBotaoInicio() {
 
 
 
+//Envia mensagens dinâmicamente conforme o usuário avança as etapas do decodificador. Exibe no elemento mensagemSaidaDinamica na seção aside
+function exibirAlertaSaida(mensagem) {
+
+    document.getElementById('mensagemSaidaDinamica').innerHTML= mensagem;
+    element = document.querySelector('#mensagemSaidaDinamica');
+    element.style.visibility = 'visible';
+
+}
+
+
+
+//Envia mensagens dinâmicamente conforme o usuário avança as etapas do decodificador. Exibe no elemento mensagemEntradaDinamica na seção main 
+function exibirAlertaEntrada(mensagem) {
+
+    document.getElementById('mensagemEntradaDinamica').innerHTML= mensagem;
+    element = document.querySelector('#mensagemEntradaDinamica');
+    element.style.visibility = 'visible';
+
+}
+
+
+
 //chama essas funções para iniciar a aplicação com os botões ocultos.
 ocultarBotaoCopiar();
 ocultarBotaoColar();
