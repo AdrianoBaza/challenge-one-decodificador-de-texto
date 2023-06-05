@@ -127,6 +127,29 @@ function exibirAlertaEntrada(mensagem) {
 
 
 
+//oculta botões; limpa campo mensagemEntradaDinamica; exibe botãoInício
+function preparaInicio() {
+
+    ocultarBotaoCopiar();
+    ocultarBotaoColar();
+    ocultarBotoesEncriptografar();
+    exibirAlertaEntrada('');
+    exibirBotaoInicio();
+
+}
+
+
+//recarrega a página reiniciando a aplicação
+function inicio() {
+
+    addEventListener("click", function() {
+        location.reload()
+    })
+
+}
+
+
+
 //chama essas funções para iniciar a aplicação com os botões ocultos.
 ocultarBotaoCopiar();
 ocultarBotaoColar();
