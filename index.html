@@ -26,27 +26,27 @@
                 <h1>Decodificador de Texto</h1>
             </header>
 
-            <!-- recebe as entradas de texto do usuário e contém os botões de ação para criptografar, descriptogrfar, colar, recomeçar-->
+            <!-- recebe as entradas de texto do usuário e contém os botões de ação para criptografar, descriptogrfar, colar, inicio-->
             <main>
                 <div class="molduraMain">
                     <textarea  id="mensagemEntrada"  rows="6"></textarea>
                 
-                    <div class="mensagemEntradaDinamicaBox">
+                    <div id="mensagemEntradaDinamicaBox">
                         <img class="exclamacao" src="imagens/exclamacao.png" alt="Símbolo de exclamação">
                         <h6 id="mensagemEntradaDinamica"><strong>Apenas letras minúsculas e sem acento.</strong></h6>
                     </div>
 
                     <div class="botaoColarBox">
-                        <button id="botaoColar">colar</button>
+                        <button id="botaoColar" onclick="colarTexto()">colar</button>
                     </div>
 
-                    <div class="botaoRecomecarBox">
-                        <button id="botaoRecomecar">recomeçar</button>
+                    <div class="botaoInicioBox">
+                        <button id="botaoInicio" onclick="inicio()">inicio</button>
                     </div>
 
                     <div class="botoesEncriptografarBox">
-                        <button id="botaoCriptografar">criptografar</button>
-                        <button id="botaoDescriptografar">descriptografar</button>
+                        <button id="botaoCriptografar" onclick="botaoCriptografar()">criptografar</button>
+                        <button id="botaoDescriptografar" onclick="botaoDescriptografar()">descriptografar</button>
                     </div>
                 </div>                    
             </main>
@@ -61,7 +61,7 @@
 
                     <h6 id="mensagemSaidaDinamica"><strong>Nenhuma mensagem encontrada</strong></h6>
 
-                    <button id="botaoCopiar">copiar</button>
+                    <button id="botaoCopiar" onclick="copiarTexto()">copiar</button>
                 </div>
             </aside>
 
@@ -80,6 +80,7 @@
 
         </div>
 
+        <!-- Script com as ações de encriptar e desencriptar o texto -->
         <script src="script.js"></script>
         
     </body>
