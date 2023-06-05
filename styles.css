@@ -81,7 +81,7 @@ main {
     border-radius: 20px;
 }
 
-.mensagemEntradaDinamicaBox {
+#mensagemEntradaDinamicaBox {
     display: flex;
     align-items:center;
 }
@@ -190,13 +190,13 @@ footer {
 /* Formatação dos botoes criptografar, descriptografar, copiar, colar, recomeçar*/
 
 /* caixa que envolve os botoes da seção main */
-.botaoColarBox, .botaoRecomecarBox, .botoesEncriptografarBox {
+.botaoColarBox, .botaoInicioBox, .botoesEncriptografarBox {
     text-align: center;
     width: 100%;
 }
 
 /* estilização dos 5 botões da aplicação */
-#botaoColar, #botaoRecomecar, #botaoCriptografar, #botaoDescriptografar, #botaoCopiar {
+#botaoColar, #botaoInicio, #botaoCriptografar, #botaoDescriptografar, #botaoCopiar {
     width: 45%;
     min-width: 110px;
     height: 50px;
@@ -223,12 +223,12 @@ footer {
 }
 
 /* estilização da cor e hover do botao recomecar*/
-#botaoRecomecar {
+#botaoInicio {
     background-color: #c8cd3b;
     color: #01180c;
 }
 
-#botaoRecomecar:hover {    
+#botaoInicio:hover {    
     transition: 200ms all;
     cursor: pointer;
     background-color: #95a131;
