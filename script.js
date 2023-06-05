@@ -75,6 +75,36 @@ function ocultarMascote() {
 
 
 
+//exibe o botao copiar
+function exibirBotaoCopiar() {
+
+    element = document.querySelector('#botaoCopiar');
+    element.style.visibility = 'visible';
+
+}
+
+
+
+//exibe o botão colar
+function exibirBotaoColar() {
+
+    element = document.querySelector('#botaoColar');
+    element.style.visibility = 'visible';
+
+}
+
+
+
+//exibe o botão início
+function exibirBotaoInicio() {
+
+    element = document.querySelector('#botaoInicio');
+    element.style.visibility = 'visible';
+
+}
+
+
+
 //chama essas funções para iniciar a aplicação com os botões ocultos.
 ocultarBotaoCopiar();
 ocultarBotaoColar();
