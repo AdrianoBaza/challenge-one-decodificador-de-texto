@@ -220,6 +220,33 @@ function botaoDescriptografar() {
 
 
 
+//copia o texto, envia mensagem, exibe botão colar (na seção aside); oculta ícone exclamação e limpa mensagem dinâmica (na seção main)
+function copiarTexto() {
+
+    addEventListener('click', (e) => {
+        navigator.clipboard.writeText(mensagemSaida.value);
+    })
+    exibirAlertaSaida('Copiado. Clique no botão colar');
+    exibirBotaoColar();
+    ocultarExclamacao();
+    exibirAlertaEntrada('');
+}
+
+
+
+//cola o texto criptografado e envia mensagem de texto colado (na seção main); 
+function colarTexto() {
+    
+    addEventListener('click', async (e) => {
+        mensagemEntrada.value = await navigator.clipboard.readText();        
+    })
+    
+    exibirAlertaEntrada('Agora clique no botão descriptografar');
+    
+}
+
+
+
 //chama essas funções para iniciar a aplicação com os botões ocultos.
 ocultarBotaoCopiar();
 ocultarBotaoColar();
