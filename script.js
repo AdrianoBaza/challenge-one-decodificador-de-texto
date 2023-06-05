@@ -187,6 +187,39 @@ function botaoCriptografar () {
 
 
 
+//executa a descriptografia do texto inserido pelo usuário 
+function descriptografar(stringDescriptografada) {
+
+
+    var chaves = [['e', 'enter'], ['i', 'imes'], ['a', 'ai'], ['o', 'ober'], ['u', 'ufat']];
+    stringDescriptografada = stringDescriptografada.toLowerCase();
+    
+    for(var i = 0; i < chaves.length; i++) {
+        if(stringDescriptografada.includes(chaves[i][1])) {
+            stringDescriptografada = stringDescriptografada.replaceAll(chaves[i][1], chaves[i][0]);
+        }
+
+    }
+
+    return stringDescriptografada;
+
+}
+
+
+
+//chama a função descriptografar; envia popup; envia mensagem (na seção aside); chama a função preparaRecomeçar
+function botaoDescriptografar() {
+
+    var textoDescriptografado = descriptografar(mensagemEntrada.value);
+    mensagemSaida.value = textoDescriptografado;
+    alert('DESCRIPTOGRAFADO COM SUCESSO!'); //exibe popup de confirmação da criptografia
+    exibirAlertaSaida('Clique em início para recomeçar');
+    preparaInicio(); 
+    
+}
+
+
+
 //chama essas funções para iniciar a aplicação com os botões ocultos.
 ocultarBotaoCopiar();
 ocultarBotaoColar();
